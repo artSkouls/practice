@@ -20,7 +20,7 @@ class Employee:
         elif day >= 28:
             self.raz = day - 8
         zp_day = self.salary_f_day * self.raz
-        return(zp_day)
+        return zp_day
 
     @staticmethod
     def comparison(emp1_zp, emp2_zp, n1, s1, n2, s2):
