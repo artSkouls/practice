@@ -2,7 +2,7 @@ from models.EmployeeClass import Employee
 
 
 class Programmer(Employee):
-    position = "Recruiter"
+    position = "Programmer"
 
     def __str__(self):
         return f"{self.position}: {self.name} {self.surname}"

@@ -1,3 +1,5 @@
+f = open('text.txt', 'a')
+
 class Employee:
     def __init__(self, name, surname, email, number, salary_f_day):
         self.name = name
@@ -5,6 +7,8 @@ class Employee:
         self.email = email
         self.number = number
         self.salary_f_day = salary_f_day
+        f.seek(0)
+
 
     @staticmethod
     def work():
@@ -28,3 +32,10 @@ class Employee:
             return f"{n1} {s1} получает ЗП больше, чем {n2} {s2}"
         elif emp1_zp < emp2_zp:
             return f"{n2} {s1} получает ЗП больше, чем {n1} {s2}"
+
+
+    def validation(self, email):
+        if email in f:
+            raise ValueError("Такой имейл уже есть в файле")
+        else:
+            f.write(email + " ")

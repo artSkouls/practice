@@ -10,8 +10,8 @@ from models.Vacancy import Vacancy
 def main():
     time_string = int(time.strftime("%d"))
 
-    a = Programmer("Artur", "Ryhas", "dafa", "42424", 100)
-    r = Recruiter("Oleg", "Ryhas", "dafa", "42424", 20000)
+    a = Programmer("Artur", "Ryhas", "gogo", "42424", 100)
+    r = Recruiter("Oleg", "Ryhas", "mon", "42424", 20000)
     r1 = Recruiter("Semen", "Ivanov", "email", "number", 40)
     a1 = Programmer("Anton", "Lomov", "dafa", "42424", 101)
     a2 = Programmer("Mykola", "Vaschuk", "dafa", "42424", 102)
